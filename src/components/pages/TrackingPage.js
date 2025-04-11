@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./TrackingPage.css";
 
-const TrackingPage = () => {
+export default function TrackingPage () {
     const navigate = useNavigate();
     const [consignmentNumber, setConsignmentNumber] = useState("");
     const [error, setError] = useState("");
@@ -40,6 +40,12 @@ const TrackingPage = () => {
         }
     };
 
+    const handleenter = (e) => {
+        if (e.key === 'Enter') {
+            handleTrack();
+        }
+    };
+
     return (
         <div>
             <nav className="navbar-track">
@@ -64,6 +70,7 @@ const TrackingPage = () => {
                                     placeholder="Enter your consignment number"
                                     value={consignmentNumber}
                                     onChange={(e) => setConsignmentNumber(e.target.value)}
+                                    onKeyDown={handleenter} 
                                     className="input-box-track"
                                 />
                                 <button className="track-button-track" onClick={handleTrack} disabled={loading}>
@@ -87,5 +94,3 @@ const TrackingPage = () => {
         </div>
     );
 };
-
-export default TrackingPage;
