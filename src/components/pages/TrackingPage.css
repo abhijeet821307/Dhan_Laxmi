@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.container-track {
+  width: 80%;
+  max-width: 1000px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px auto;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  gap: 20px;
+}
+
+.tracking-container-track {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  background: linear-gradient(to right, #0d3559, transparent),
+    url("https://source.unsplash.com/featured/?packages") center/cover;
+  padding: 10px;
+}
+
+.navbar-track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background-color: #0d3559;
+  color: white;
+}
+
+.logo-track {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.home-button-track {
+  padding: 8px 15px;
+  border: none;
+  background: #ff8800;
+  color: black;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-button-track:hover {
+  background: #0d3559;
+  color: white;
+}
+
+.promo-section-track {
+  flex: 1;
+  color: white;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.promo-section-track h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.promo-section-track h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.discount-track {
+  color: red;
+  font-weight: bold;
+}
+
+.tracking-section-track {
+  width: 400px;
+  background-color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: auto;
+}
+
+.tracking-section-track h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.input-box-track {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.track-button-track {
+  width: 100%;
+  padding: 12px;
+  background: #ff8800;
+  color: black;
+  border: none;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.track-button-track:hover {
+  background: #0d3559;
+  color: white;
+}
+
+.right-section-track {
+  width: 100%;
+  background-color: #1b4f72;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left-section-track {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10;
+}
+
+/* RESPONSIVENESS */
+
+/* Tablets */
+@media (max-width: 1024px) {
+  .container-track {
+    flex-direction: column;
+    width: 90%;
+    padding: 20px;
+  }
+
+  .promo-section-track {
+    padding: 40px;
+    text-align: center;
+  }
+
+  .promo-section-track h2 {
+    font-size: 22px;
+  }
+
+  .promo-section-track h3 {
+    font-size: 18px;
+  }
+
+  .tracking-section-track {
+    width: 90%;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-track {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 15px;
+  }
+
+  .logo-track {
+    margin-bottom: 10px;
+  }
+
+  .home-button-track {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  .container-track {
+    flex-direction: column;
+    width: 95%;
+    padding: 15px;
+  }
+
+  .promo-section-track {
+    padding: 20px;
+    text-align: center;
+  }
+
+  .promo-section-track h2 {
+    font-size: 20px;
+  }
+
+  .promo-section-track h3 {
+    font-size: 16px;
+  }
+
+  .tracking-section-track {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .tracking-section-track h3 {
+    font-size: 18px;
+  }
+
+  .input-box-track {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .track-button-track {
+    font-size: 14px;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .promo-section-track {
+    padding: 15px;
+  }
+
+  .promo-section-track h2 {
+    font-size: 18px;
+  }
+
+  .promo-section-track h3 {
+    font-size: 14px;
+  }
+
+  .tracking-section-track {
+    padding: 15px;
+  }
+
+  .tracking-section-track h3 {
+    font-size: 16px;
+  }
+
+  .input-box-track {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  .track-button-track {
+    font-size: 14px;
+    padding: 8px;
+  }
+}

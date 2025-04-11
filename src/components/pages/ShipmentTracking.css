@@ -1,0 +1,317 @@
+.shipment-container-ship {
+    width: 80%;
+    max-width: 1000px;
+    margin: auto;
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.print-button-ship {
+    float: right;
+    padding: 10px 15px;
+    background: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.print-button-ship:hover {
+    background: #0056b3;
+}
+
+.header-ship {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 22px;
+}
+
+/* Progress Bar */
+.progress-bar-ship {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.progress-step-ship {
+    text-align: center;
+    position: relative;
+    width: 30%;
+    font-size: 16px;
+}
+
+.progress-step-ship.active {
+    color: #007bff;
+    font-weight: bold;
+}
+
+.separator-ship {
+    border-top: 2px solid #ddd;
+    margin: 20px 0;
+}
+
+/* Add this to your CSS */
+.status-delivered {
+    color: green;
+    font-weight: bold;
+}
+
+.status-in-transit {
+    color: orange;
+    font-weight: bold;
+}
+
+.status-dispatched {
+    color: blue;
+    font-weight: bold;
+}
+
+.status-pending {
+    color: red;
+    font-weight: bold;
+}
+
+.status-unknown {
+    color: gray;
+    font-weight: bold;
+}
+
+/* Shipment Table */
+.shipment-table-ship {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.shipment-table-ship tr {
+    border-bottom: 1px solid #ddd;
+}
+
+.table-header-ship {
+    background: #f0f0f0;
+    padding: 10px;
+    font-weight: bold;
+    width: 40%;
+    text-align: left;
+}
+
+.table-data-ship {
+    padding: 10px;
+    color: #333;
+    text-align: left;
+}
+
+/* RESPONSIVENESS */
+
+/* Tablets */
+@media (max-width: 1024px) {
+    .shipment-container-ship {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .header-ship {
+        font-size: 20px;
+    }
+
+    .progress-bar-ship {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .progress-step-ship {
+        font-size: 14px;
+        width: 32%;
+    }
+
+    .shipment-table-ship {
+        font-size: 14px;
+    }
+
+    .table-header-ship,
+    .table-data-ship {
+        padding: 8px;
+    }
+}
+
+/* Mobile Devices */
+@media (max-width: 768px) {
+    .shipment-container-ship {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .header-ship {
+        font-size: 18px;
+    }
+
+    .print-button-ship {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .progress-bar-ship {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .progress-step-ship {
+        font-size: 14px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .shipment-table-ship {
+        font-size: 12px;
+    }
+
+    .table-header-ship,
+    .table-data-ship {
+        padding: 6px;
+        display: block;
+        text-align: left;
+        width: 100%;
+    }
+
+    .shipment-table-ship tr {
+        display: block;
+        margin-bottom: 10px;
+        border-bottom: 2px solid #ddd;
+    }
+}
+
+/* Small Mobile Devices */
+@media (max-width: 480px) {
+    .shipment-container-ship {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header-ship {
+        font-size: 16px;
+    }
+
+    .progress-step-ship {
+        font-size: 12px;
+        width: 100%;
+    }
+
+    .shipment-table-ship {
+        font-size: 10px;
+    }
+
+    .table-header-ship,
+    .table-data-ship {
+        padding: 5px;
+    }
+}
+
+.progress-tracker-ship {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0 30px;
+    position: relative;
+}
+
+.progress-step-ship {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+}
+
+.step-icon-ship {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: #e0e0e0;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.step-label-ship {
+    font-size: 12px;
+    color: #777;
+    text-align: center;
+}
+
+.progress-connector-ship {
+    flex-grow: 1;
+    height: 4px;
+    background: #e0e0e0;
+    margin: 0 5px;
+}
+
+.progress-step-ship.completed .step-icon-ship,
+.progress-step-ship.active .step-icon-ship {
+    background: #4CAF50;
+}
+
+.progress-step-ship.completed + .progress-connector-ship {
+    background: #4CAF50;
+}
+
+.progress-step-ship.active .step-label-ship {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+
+.status-delivered {
+    color: #4CAF50;
+    font-weight: bold;
+}
+
+.status-in-transit {
+    color: #FF9800;
+    font-weight: bold;
+}
+
+.status-dispatched {
+    color: #2196F3;
+    font-weight: bold;
+}
+
+.status-pending {
+    color: #F44336;
+    font-weight: bold;
+}
+
+.status-unknown {
+    color: #9E9E9E;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .progress-tracker-ship {
+        flex-wrap: wrap;
+    }
+    
+    .progress-step-ship {
+        width: 25%;
+        margin-bottom: 10px;
+    }
+    
+    .progress-connector-ship {
+        display: none;
+    }
+    
+    .step-label-ship {
+        font-size: 10px;
+    }
+}
+

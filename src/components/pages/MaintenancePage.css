@@ -1,0 +1,156 @@
+.navbar-track {
+  background-color: #0d3559;
+  color: white;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo-track {
+  font-size: 1.5rem;
+  font-weight: bold;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.home-button-track {
+  background-color: #ff8800;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s;
+  white-space: nowrap;
+}
+
+.home-button-track:hover {
+  background-color: #0d3559;
+}
+
+.maintenance-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 65px);
+  background-color: #f5f5f5;
+  padding: 20px;
+}
+
+.maintenance-content {
+  max-width: 600px;
+  width: 100%;
+  padding: 40px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 20px 0;
+}
+
+.maintenance-icon {
+  margin-bottom: 20px;
+  color: #e74c3c;
+}
+
+.maintenance-icon svg {
+  width: 64px;
+  height: 64px;
+}
+
+.maintenance-content h1 {
+  color: #e74c3c;
+  margin-bottom: 20px;
+  font-size: 2.2rem;
+}
+
+.maintenance-content p {
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.6;
+}
+
+.maintenance-contact {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.maintenance-contact a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.maintenance-contact a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .navbar-track {
+    padding: 12px 15px;
+  }
+
+  .logo-track {
+    font-size: 1.3rem;
+    max-width: 180px;
+  }
+
+  .home-button-track {
+    padding: 6px 12px;
+    font-size: 0.9rem;
+  }
+
+  .maintenance-content {
+    padding: 30px 20px;
+  }
+
+  .maintenance-content h1 {
+    font-size: 1.8rem;
+  }
+
+  .maintenance-content p {
+    font-size: 1rem;
+  }
+
+  .maintenance-icon svg {
+    width: 48px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar-track {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .logo-track {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .maintenance-container {
+    padding: 10px;
+  }
+
+  .maintenance-content {
+    margin: 10px 0;
+    padding: 25px 15px;
+  }
+
+  .maintenance-content h1 {
+    font-size: 1.6rem;
+  }
+}
